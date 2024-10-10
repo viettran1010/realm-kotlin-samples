@@ -26,7 +26,8 @@ class Book : RealmObject {
     var subtitle: String? = ""
     var title: String = ""
     var editionCount: Int? = null
-    var firstPublishYear: Int? = null
+    var firstPublishYear: Int = 0
+    var birthday: String = ""
     var imgId: String? = null
     var enum1: String? = null
     var authors: RealmList<String> = realmListOf()
