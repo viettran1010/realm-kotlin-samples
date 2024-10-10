@@ -19,6 +19,7 @@ package io.realm.sample.bookshelf.model
 import io.realm.kotlin.types.RealmList
 import io.realm.kotlin.types.RealmObject
 import io.realm.kotlin.ext.realmListOf
+import kotlin.reflect.KClass
 
 class Book : RealmObject {
 
@@ -27,6 +28,7 @@ class Book : RealmObject {
     var editionCount: Int? = null
     var firstPublishYear: Int? = null
     var imgId: String? = null
+    var enum1: String? = null
     var authors: RealmList<String> = realmListOf()
 
     companion object {
